@@ -1,60 +1,54 @@
- 
-# 🛡️ SOC Threat Detection & Investigation using Splunk
+# 🛡️ SOC Lab: Windows Domain with Splunk
 
-This project simulates a mini-SOC environment using **Splunk** to ingest logs, detect malicious activity, trigger alerts, and conduct incident investigations. It demonstrates core skills of a SOC analyst such as detection engineering, threat hunting, and response documentation.
-
----
-
-## 📂 Project Structure
-
-SOC-Splunk-Project/
-├── logs/ # Sample logs (Windows, Linux, Firewall, Web)
-├── detections/ # Saved Splunk detection queries
-├── alerts/ # Simulated alerts from Splunk
-├── incident_reports/ # Markdown files with full incident analysis
-├── dashboards/ # Splunk JSON dashboard exports
-└── README.md # Project documentation
+This is a home lab project to simulate a basic Security Operations Center (SOC) using Windows infrastructure and Splunk for centralized log collection.
 
 ---
 
-## 🧪 Simulated Use Cases
+## 🧰 Lab Components
 
-| Incident ID | Detection Use Case               | MITRE Tactic      | Technique         |
-|-------------|----------------------------------|-------------------|-------------------|
-| 001         | Brute Force Login (SSH/RDP)      | Initial Access    | T1110             |
-| 002         | Suspicious PowerShell Execution  | Execution         | T1059             |
-| 003         | Data Exfiltration via HTTP       | Exfiltration      | T1048             |
-
----
-
-## 🧰 Tools & Technologies
-
-- **Splunk Free / Enterprise Trial**
-- **Sample Logs** (Sysmon, Linux `auth.log`, Apache, Firewall)
-- **MITRE ATT&CK Navigator**
-- **Windows Event Logs**, **Web Logs**, **Firewall Logs**
-- Optional: Suricata, Wireshark for log generation
+| Component           | Description                                 |
+|---------------------|---------------------------------------------|
+| 🖥️ Domain Controller | Windows Server (Active Directory setup)     |
+| 💻 Client Machine    | Windows Server joined to AD domain              |
+| ⚙️ Sysmon            | Installed on both DC and client for deep logging |
+| 📤 Splunk Universal Forwarder | Installed on both DC and client |
+| 📊 Splunk Enterprise | Installed on separate server, used to collect and analyze logs |
 
 ---
 
-## 📊 Features
+## 🔄 Log Sources
 
-- Detection Engineering with SPL (Splunk Processing Language)
-- SOC Dashboard with metrics and visualizations
-- Simulated alerts and responses
-- Incident reports with ATT&CK mapping and remediation
+- Windows Event Logs (Security.evtx)
+- Sysmon Logs (Microsoft-Windows-Sysmon/Operational)
 
 ---
 
-## 📎 Link
+## 🔌 Log Flow
 
-🔗 [Project Portfolio Link](https://ghassanalnomani.github.io/cybersecurity-portfolio/)  
-🔗 [View on GitHub](https://github.com/ghassanalnomani/SOC-Splunk-Project)
+
+
 
 ---
 
-## 📌 Status
+## ✅ Project Status
 
-✅ Project Structure Created  
-🛠️ Detection Rules and Incident Reports: In Progress  
-📈 Dashboard Visualization: Coming Soon
+- ✅ Active Directory setup (Domain: `corp.local`)
+- ✅ One Windows 10 client joined to domain
+- ✅ Sysmon installed with custom config
+- ✅ Splunk Universal Forwarder deployed
+- ✅ Splunk Server installed and receiving logs
+
+---
+
+## 🛠️ Next Steps (Coming Soon)
+
+- Add basic detections (e.g., failed login attempts)
+- Build Splunk dashboard
+- Document sample incident response
+
+---
+
+## 🔗 Author
+
+**Ghassan AlNumani**  
+[Portfolio](https://ghassanalnomani.github.io/cybersecurity-portfolio/)
