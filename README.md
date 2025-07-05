@@ -39,7 +39,7 @@ This is a home lab project to simulate a basic Security Operations Center (SOC) 
 ## ✅ Project Status
 
 - ✅ Active Directory setup (Domain: `corp.local`)
-- ✅ One Windows 10 client joined to domain
+- ✅ One Windows server (client) joined to domain
 - ✅ Sysmon installed with custom config
 - ✅ Splunk Universal Forwarder deployed
 - ✅ Splunk Server installed and receiving logs
