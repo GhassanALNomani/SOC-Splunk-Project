@@ -29,7 +29,7 @@ This is a home lab project to simulate a basic Security Operations Center (SOC) 
 |---|-------------|-------|
 | 1 | Domain Controller setup | ![](screenshots/AD-domain-setup.JPG) |
 | 2 | Client joined to domain | ![](screenshots/Client-joined-to-domain.JPG) |
-| 3 | Splunk Web interface running | ![](Splunk-web-interface.JPG) |
+| 3 | Splunk Web interface running | ![](screenshots/Splunk-web-interface.JPG) |
 | 4 | Splunk listening on port 9997 | ![](screenshots/splunk-listening-9997.JPG) |
 | 5 | Forwarder connection to Splunk | ![](screenshots/forwarder-confirmed.JPG) |
 | 6 | Sysmon logs in Event Viewer | ![](screenshots/sysmon-eventviewer.JPG) |
